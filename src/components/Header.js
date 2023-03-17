@@ -37,7 +37,7 @@ function Header() {
       >
         <ul className="flex flex-wrap justify-center mt-4 lg:flex-row list-none lg:ml-auto">
         <NavLink to="/">
-            <button className="text-base py-1.5 px-4 overflow-hidden	">Home</button>
+            <button className="text-base py-1.5 px-4 overflow-hidden">Home</button>
             </NavLink>
             <NavLink to="/photos/">
             <button className="text-base py-1.5 px-4 ">Photos</button>

@@ -20,24 +20,26 @@ function About() {
                 <p className='text-[15px] lg:text-lg text-gray-400 py-4'>
                   <b><i>Technologies I use in my projects;</i></b>
                 </p>
+                <div className='text-[15px] lg:text-lg text-gray-400 py-4 flex-col items-baseline md:flex-row flex md:items-center'>
+                  <span className='mr-4 mb-2 inline-block'><b>Frontend: </b></span>
+                  <div className='flex flex-wrap'>
+                    <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white mb-1 md:mb-0'>html</span>
+                    <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white mb-1 md:mb-0'>css</span>
+                    <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white mb-1 md:mb-0'>sass</span>
+                    <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white mb-1 md:mb-0'>tailwind</span>
+                    <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white mb-1 md:mb-0'>bootstrap</span>
+                    <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white mb-1 md:mb-0'>js</span>
+                    <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white mb-1 md:mb-0'>jquery</span>
+                    <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white mb-1 md:mb-0'>react</span>
+                    <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white mb-1 md:mb-0'>redux</span>
+                    <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white mb-1 md:mb-0'>redux-toolkit</span>
+                    <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white mb-1 md:mb-0'>redux-router</span>
+                    <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white mb-1 md:mb-0'>figma</span>
+                    <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white mb-1 md:mb-0'>md</span>
+                  </div>
+                </div>
                 <p className='text-[15px] lg:text-lg text-gray-400 py-4'>
-                  <span className='mr-4'><b>Frontend: </b></span>
-                  <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white'>html</span>
-                  <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white'>css</span>
-                  <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white'>sass</span>
-                  <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white'>tailwind</span>
-                  <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white'>bootstrap</span>
-                  <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white'>js</span>
-                  <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white'>jquery</span>
-                  <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white'>react</span>
-                  <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white'>redux</span>
-                  <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white'>redux-toolkit</span>
-                  <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white'>redux-router</span>
-                  <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white'>figma</span>
-                  <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white'>md</span>
-                </p>
-                <p className='text-[15px] lg:text-lg text-gray-400 py-4'>
-                  <span className='mr-4'><b>Backend: </b></span>
+                  <span className='mr-4 mb-2 inline-block'><b>Backend: </b></span>
                   <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white'>php</span>
                   <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white'>mysql</span>
                   <span className='rounded-full text-sm font-bold inline py-1 px-3 mr-1 bg-[#1db954] text-white'>laravel</span>

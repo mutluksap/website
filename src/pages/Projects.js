@@ -27,7 +27,7 @@ function Projects() {
                 {
                     data?.map((item, index)=> {
                         return(
-                            <div key={item.id} className='w-[30%] bg-green-500/5 rounded border border-green-200/10 p-4 mb-5'>
+                            <div key={item.id} className='w-full md:w-[30%] bg-green-500/5 rounded border border-green-200/10 p-4 mb-5'>
                                 <div className='flex justify-between items-center'>
                                     <div className='text-2xl font-bold'>
                                         {item.name}
