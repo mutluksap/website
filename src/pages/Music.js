@@ -6,25 +6,30 @@ import { fetchcreateToken } from '../redux/slices/CreateToken';
 import { fetchPlayList } from '../redux/slices/Playlist';
 
 function Music() {
-
-
   const dispatch = useDispatch();
 
   useEffect(() => {
-      if(!localStorage.getItem('access_token')){
-        dispatch(fetchcreateToken());
-      }else {
-        dispatch(fetchcreateToken());
-        dispatch(fetchPlayList(localStorage.getItem('access_token')));
+      const spotifyAccessData = localStorage.getItem('s_access_token')
+      if(spotifyAccessData) {
+          const serialized = JSON.parse(spotifyAccessData)
+          dispatch(fetchPlayList(serialized.token));
       }
+      else {
+          dispatch(fetchcreateToken()).then((data) => {
+              dispatch(fetchPlayList(data.payload.access_token));
+          })
+      }
+
+      setTimeout(() => {
+        localStorage.removeItem('s_access_token')
+      }, 45 * 60 * 1000)
   }, [])
 
-  const {data, status} = useSelector(state => state.token);
+  const {data, status} = useSelector(state => state.playlist);
 
   if(status === "loading") return <Loading/>
     if(status === "failed") return <Error/>
     if(status === "done"){
-      localStorage.setItem('access_token', JSON.stringify(data.access_token));
       return (
         <div className='container mx-auto'>
                 <div className='p-6 lg:p-10 mb-6 border rounded-md bg-green-500/5 border-green-500/10'>

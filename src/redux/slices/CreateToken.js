@@ -39,6 +39,15 @@ const createToken = createSlice({
         })
         .addCase(fetchcreateToken.fulfilled, (state, action) => {
             state.status = "done"
+
+            const now = new Date()
+            const saveItem = {
+                token: action.payload.access_token,
+                date: `${now.getHours()}:${now.getMinutes()}`
+            }
+
+            localStorage.setItem(('s_access_token'), JSON.stringify(saveItem))
+
             state.data = action.payload
         })
     }

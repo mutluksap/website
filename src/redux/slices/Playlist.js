@@ -7,10 +7,9 @@ const initialState = {
 }
 
 export const fetchPlayList = createAsyncThunk('fetch/PlayList', async (token) => {
-    const new_token = token.substring(1, token.length - 1);
     const response = await axios.get('https://api.spotify.com/v1/playlists/7aXbmbihRPTetgzFsdXx4d', {
         headers: {
-            Authorization: "Bearer " + new_token,
+            Authorization: "Bearer " + token,
         },
     })
     .then(res => console.log(res.data));

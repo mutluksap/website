@@ -7,6 +7,7 @@ import Music from "./pages/Music"
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import About from "./pages/About"
+import {useEffect} from "react";
 function App() {
   return (
     <div className="App">
