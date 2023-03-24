@@ -12,7 +12,7 @@ export const fetchPlayList = createAsyncThunk('fetch/PlayList', async (token) =>
             Authorization: "Bearer " + token,
         },
     })
-    .then(res => console.log(res.data));
+    return response.data;
 })
 
 const playList = createSlice({

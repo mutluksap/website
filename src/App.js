@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <div className="flex flex-col bg-black text-white">
         <Header/>
-        <div className="min-h-[calc(100vh_-_365px)]">
+        <div className="min-h-[calc(100vh_-_345px)]">
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/photos/" element={<Photos/>} />
