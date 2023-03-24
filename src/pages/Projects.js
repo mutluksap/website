@@ -24,7 +24,7 @@ function Projects() {
             <div className='p-6 lg:p-10 mb-6 border rounded-md bg-green-500/5 border-green-500/10'>
                 <h2 className='text-xl lg:text-4xl font-bold lg:leading-[46px]'>Projects</h2>
                 <p className='text-[15px] lg:text-lg text-gray-400 py-4'>
-                You can find all of my Github repo below. You can click on the <b>github</b> icon to get detailed information about the projects.
+                You can find all of my Github repo below. You can click on the <b>github</b> icon to get detailed information about the projects. If you want a preview, you can view the demo of the project by clicking the house icon.
                 </p>
             </div>
              <div className='flex justify-between flex-wrap'>
