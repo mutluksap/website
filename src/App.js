@@ -8,6 +8,13 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import About from "./pages/About"
 import {useEffect} from "react";
+import ReactGA from 'react-ga';
+
+ReactGA.initialize("G-1BQNH9BVB9");
+
+useEffect(() => {
+  ReactGA.pageview(window.location.pathname + window.location.search);
+}, []);
 function App() {
   return (
     <div className="App">
