@@ -9,8 +9,7 @@ function Home() {
         </Helmet>
         <div className="p-6 lg:p-10 border rounded-md bg-green-500/5 border-green-500/10">
         <h2 className="text-xl lg:text-4xl font-bold lg:leading-[46px]">
-            I'm Mutlu Kasap <br />
-            A Front-end Developer who lives in Istanbul, TR.
+            I'm Mutlu Kasap
             </h2>
         <p className="text-[15px] lg:text-lg text-gray-400 py-4">Welcome to my website. On my website, I will tell you about myself and my work. And I love listening to music. I leave a space at the bottom for you to send me your favorite music.
         </p>
