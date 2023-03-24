@@ -11,7 +11,7 @@ function Home() {
         <h2 className="text-xl lg:text-4xl font-bold lg:leading-[46px]">
             I'm Mutlu Kasap
             </h2>
-        <p className="text-[15px] lg:text-lg text-gray-400 py-4">Welcome to my website. On my website, I will tell you about myself and my work. And I love listening to music. I leave a space at the bottom for you to send me your favorite music.
+        <p className="text-[15px] lg:text-lg text-gray-400 py-4">Welcome to my website. On my website, I will tell you about myself and my works. And I love listening to music. I leave a space at the bottom for you to send me your favorite music.
         </p>
             <p className="text-[15px] lg:text-lg text-gray-400">Now, I'm working for <a className='underline' href="https://www.next4biz.com/" target="_blank" rel="noreferrer" >next4biz</a> on various projects. In my current position, I am developing React, React building architectures and websites. Also as a freelancer, I try to make new initiatives by establishing websites and doing SEO studies.</p>
         <nav className="flex items-center gap-x-4 text-gray-400 py-4">
