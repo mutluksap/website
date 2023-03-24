@@ -1,8 +1,12 @@
 import React from 'react'
+import {Helmet} from "react-helmet";
 
 function Contact() {
   return (
     <div className='container mx-auto'>
+      <Helmet>
+        <title>Contact - mutlukasap.dev</title>
+      </Helmet>
       <div className='p-6 lg:p-10 border rounded-md bg-green-500/5 border-green-500/10'>
         <h1 className='text-xl lg:text-4xl font-bold lg:leading-[46px]'>Contact Me 📨</h1>
         <ul className='my-1'>

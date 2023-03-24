@@ -5,6 +5,10 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './redux/store';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize("G-1BQNH9BVB9");
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 
 

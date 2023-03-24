@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import {fetchProjects} from "../redux/slices/Projects";
 import Loading from "../components/Loading"
 import Error from "../components/Error"
+import {Helmet} from "react-helmet";
 
 function Projects() {
 
@@ -17,6 +18,9 @@ function Projects() {
     if(status === "done")
     return (
         <div className='container mx-auto'>
+            <Helmet>
+                <title>Projects - mutlukasap.dev</title>
+            </Helmet>
             <div className='p-6 lg:p-10 mb-6 border rounded-md bg-green-500/5 border-green-500/10'>
                 <h2 className='text-xl lg:text-4xl font-bold lg:leading-[46px]'>Projects</h2>
                 <p className='text-[15px] lg:text-lg text-gray-400 py-4'>
