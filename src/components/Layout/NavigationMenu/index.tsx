@@ -33,7 +33,7 @@ const NavigationMenu = () => {
             <Links
               links={[
                 { href: "/about", text: "About" },
-                { href: "/blog", text: "Blog" },
+                { href: "/music", text: "Music" },
                 { href: "/photos", text: "Photos" },
               ]}
             />
