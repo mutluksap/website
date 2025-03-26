@@ -26,7 +26,7 @@ const NavigationMenu = () => {
             href="/"
             className="grid grid-flow-col items-center rounded-full overflow-hidden"
           >
-            <>MMM</>
+            <Image className="rounded-full opacity-100" height={32} width={32} src="/images/mutlukasap.png" alt="Mutlu Kasap" />
           </Link>
 
           <div className="flex flex-row-reverse items-center gap-3 sm:flex-row sm:gap-4">

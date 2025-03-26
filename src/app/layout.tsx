@@ -55,6 +55,12 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
+    <head>
+      <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
+      <link rel="icon" href="/favicon/icon.png" sizes="any" />
+      <link rel="apple-touch-icon" href="/favicon/apple-icon.png" />
+      <link rel="manifest" href="/manifest.json" />
+    </head>
       <body
         className={cn(
           "bg-white text-neutral-800 dark:bg-[rgb(5,5,5)] dark:text-neutral-200",
