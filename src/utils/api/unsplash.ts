@@ -1,4 +1,4 @@
-class Github {
+class Unsplash {
     async getData(url: string) {
         try {
             const res = await fetch(url, {
@@ -10,12 +10,12 @@ class Github {
         }
     }
 
-    getRepos() {
-        const url = "https://api.github.com/users/mutluksap/repos";
+    getImages() {
+        const url = `https://api.unsplash.com/photos/?client_id=${process.env.UNSPLASH_CLIENT_ID}`;
         return this.getData(url);
     }
 }
 
-const github = new Github();
+const unsplash = new Unsplash();
 
-export default github;
+export default unsplash;
