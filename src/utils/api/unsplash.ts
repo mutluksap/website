@@ -11,7 +11,7 @@ class Unsplash {
     }
 
     getImages() {
-        const url = `https://api.unsplash.com/photos/?client_id=${process.env.UNSPLASH_CLIENT_ID}`;
+        const url = `https://api.unsplash.com/users/mutluksap/?client_id=${process.env.UNSPLASH_CLIENT_ID}`;
         return this.getData(url);
     }
 }

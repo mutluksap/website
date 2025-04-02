@@ -1,4 +1,3 @@
-
 import JobPosition from './Job'
 import SectionTitle from "@/components/SectionTitle";
 
