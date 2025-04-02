@@ -1,21 +1,22 @@
 import SectionTitle from "@/components/SectionTitle";
+import {socials} from "@/utils/constants";
 
 const profiles = [
   {
     name: 'Twitter',
-    url: 'https://x.com/mutluksap',
+    url: socials.twitter,
   },
   {
     name: 'GitHub',
-    url: 'https://github.com/mutluksap',
+    url: socials.github,
   },
   {
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/mutlukasap/',
+    url: socials.linkedin,
   },
   {
     name: 'Email',
-    url: 'mailto:mutlukasapweb@gmail.com',
+    url: socials.mail,
   },
 ]
 

@@ -1,4 +1,5 @@
 import Wrapper from "@/components/Wrapper";
+import {socials} from "@/utils/constants";
 
 const Footer = () => (
   <footer className="mt-8">
@@ -8,7 +9,7 @@ const Footer = () => (
 
         <div className="flex items-center">
           <a
-            href="https://x.com/mutluksap"
+            href={socials.twitter}
             aria-label="Visit my Twitter"
             className="p-3 text-neutral-500 transition-colors hover:text-neutral-800 dark:hover:text-neutral-300"
           >
@@ -27,7 +28,7 @@ const Footer = () => (
           </a>
 
           <a
-            href="https://github.com/mutluksap"
+            href={socials.github}
             aria-label="Visit my GitHub"
             className="p-3 text-neutral-500 transition-colors hover:text-neutral-800 dark:hover:text-neutral-300"
           >
@@ -46,7 +47,7 @@ const Footer = () => (
           </a>
 
           <a
-            href="https://www.linkedin.com/in/mutlukasap/"
+            href={socials.linkedin}
             aria-label="Visit my LinkedIn"
             className="p-3 text-neutral-500 transition-colors hover:text-neutral-800 dark:hover:text-neutral-300"
           >
