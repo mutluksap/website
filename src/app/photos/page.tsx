@@ -39,7 +39,7 @@ const Photos = async () => {
             {
                 photos_data.photos.length === 0 &&
                 <div className="pt-10">
-                    <p className="text-gray-00 text-center">I will upload photos as soon as.</p>
+                    <p className="text-gray-400 text-center">I will upload photos as soon as.</p>
                 </div>
             }
         </section>
