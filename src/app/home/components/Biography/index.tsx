@@ -32,7 +32,7 @@ const Biography = () => (
             <div className="flex justify-between gap-8">
                 <div>
                     <h1 className="flex gap-2 pb-4 text-2xl">
-                        <span className="font-bold">Hey, I'm Mutlu Kasap</span>
+                        <span className="font-bold">Hey, I&apos;m Mutlu Kasap</span>
                         <span className="inline-block origin-[70%_70%] animate-wave">
               👋🏼
             </span>
@@ -40,7 +40,7 @@ const Biography = () => (
 
                     <div className="grid gap-4">
                         <p className="sm:max-w-md">
-                            I'm a Frontend Developer based in Istanbul.
+                            I&apos;m a Frontend Developer based in Istanbul.
                         </p>
                         <p className="sm:max-w-md">
                             I love working in-between product, engineering and developer

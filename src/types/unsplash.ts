@@ -1,62 +1,17 @@
-type AlternativeSlugs = {
-    en: string;
-    es: string;
-    ja: string;
-    fr: string;
-    it: string;
-    ko: string;
-    de: string;
-    pt: string;
-};
-
-type Urls = {
-    raw: string;
-    full: string;
-    regular: string;
-    small: string;
-    thumb: string;
-    small_s3: string;
-};
-
-type Links = {
-    self: string;
-    html: string;
-    download: string;
-    download_location: string;
-};
-
-type TopicSubmissions = {
-    nature?: { status: string };
-    wallpapers?: { status: string };
-};
-
-type ProfileImage = {
-    small: string;
-    medium: string;
-    large: string;
-};
-
-type Social = {
-    instagram_username?: string;
-    portfolio_url?: string | null;
-    twitter_username?: string | null;
-    paypal_email?: string | null;
-};
-
-type User = {
+export interface PhotosResponse {
     id: string;
     updated_at: string;
     username: string;
     name: string;
     first_name: string;
     last_name: string;
-    twitter_username: string | null;
-    portfolio_url: string | null;
-    bio: string;
+    twitter_username: string;
+    portfolio_url: string;
+    bio: string | null;
     location: string;
-    links: Links;
+    links: UserLinks;
     profile_image: ProfileImage;
-    instagram_username?: string;
+    instagram_username: string;
     total_collections: number;
     total_likes: number;
     total_photos: number;
@@ -65,30 +20,64 @@ type User = {
     total_promoted_illustrations: number;
     accepted_tos: boolean;
     for_hire: boolean;
-    social: Social;
-};
+    social: SocialLinks;
+    photos: Photo[];
+    badge: unknown; // Eğer bu alan hep null ise: null
+    tags: Tags;
+    allow_messages: boolean;
+    numeric_id: number;
+    downloads: number;
+    meta: {
+        index: boolean;
+    };
+}
 
-type Photo = {
+export interface UserLinks {
+    self: string;
+    html: string;
+    photos: string;
+    likes: string;
+    portfolio: string;
+}
+
+export interface ProfileImage {
+    small: string;
+    medium: string;
+    large: string;
+}
+
+export interface SocialLinks {
+    instagram_username: string;
+    portfolio_url: string;
+    twitter_username: string;
+    paypal_email: string | null;
+}
+
+export interface Photo {
     id: string;
     slug: string;
-    alternative_slugs: AlternativeSlugs;
     created_at: string;
     updated_at: string;
-    promoted_at: string | null;
-    width: number;
-    height: number;
-    color: string;
     blur_hash: string;
-    description: string | null;
-    alt_description: string;
-    breadcrumbs: any[];
-    urls: Urls;
-    links: Links;
-    likes: number;
-    liked_by_user: boolean;
-    current_user_collections: any[];
-    sponsorship: any | null;
-    topic_submissions: TopicSubmissions;
     asset_type: string;
-    user: User;
-};
+    urls: PhotoUrls;
+}
+
+export interface PhotoUrls {
+    raw: string;
+    full: string;
+    regular: string;
+    small: string;
+    thumb: string;
+    small_s3: string;
+}
+
+export interface Tags {
+    custom: Tag[];
+    aggregated: Tag[];
+}
+
+export interface Tag {
+    type: string;
+    title: string;
+}

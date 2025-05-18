@@ -5,8 +5,8 @@ class Unsplash {
                 method: "GET",
             });
             return await res.json();
-        } catch (e) {
-            return null;
+        } catch (error) {
+            return error;
         }
     }
 

@@ -4,9 +4,9 @@ import {
     SpotifyAccessToken,
     SpotifyClass,
     SpotifyNowListeningResponse,
-    SpotifyRecentlyPlayedResponse,
+    SpotifyRecentlyPlayedResponse, Track,
 } from "@/types/spotify";
-import { fetch, Response } from "next/dist/compiled/@edge-runtime/primitives";
+import {fetch, Response} from "next/dist/compiled/@edge-runtime/primitives";
 
 class Spotify implements SpotifyClass {
     static readonly ENDPOINTS = {
@@ -29,7 +29,7 @@ class Spotify implements SpotifyClass {
 
     /**
      * 🔐 CODE ile ilk defa refresh_token ve access_token almak için
-     */
+
     async getInitialTokensFromCode(code: string, redirectUri: string) {
         const response = await fetch(Spotify.ENDPOINTS.TOKEN, {
             method: "POST",
@@ -45,14 +45,9 @@ class Spotify implements SpotifyClass {
         });
 
         const text = await response.text();
-
-        try {
-            const data = JSON.parse(text);
-            return data;
-        } catch (error) {
-            throw new Error(`Response is not valid JSON: ${text}`);
-        }
+        return JSON.parse(text);
     }
+     */
 
     async getAccessToken(): Promise<SpotifyAccessToken> {
         if (!this.REFRESH_TOKEN) {
@@ -118,7 +113,7 @@ class Spotify implements SpotifyClass {
         }
     }
 
-    formatTrackInfo(track: any, isNowPlaying: boolean): FormattedTrackInfo {
+    formatTrackInfo(track: Track, isNowPlaying: boolean): FormattedTrackInfo {
         return {
             id: track.id,
             url: track.external_urls.spotify,

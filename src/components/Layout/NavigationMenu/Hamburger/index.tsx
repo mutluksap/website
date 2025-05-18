@@ -18,7 +18,7 @@ const Hamburger = (props: Props) => {
     if (isOpen) {
       setIsOpen(false)
     }
-  }, [pathname])
+  }, [pathname, isOpen, setIsOpen])
 
   return (
     <div className="sm:hidden">

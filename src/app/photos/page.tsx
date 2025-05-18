@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import unsplash from "@/utils/api/unsplash";
 import Image from "next/image";
+import {PhotosResponse} from "@/types/unsplash";
 
 export const metadata: Metadata = {
     title: 'Photos',
@@ -13,17 +14,17 @@ export const metadata: Metadata = {
 };
 
 const Photos = async () => {
-    const photos_data = await unsplash.getImages();
+    const photos_data: PhotosResponse = await unsplash.getImages();
     return (
         <section>
             {
                 photos_data.photos.length > 0 &&
                 <div className="columns-1 sm:columns-2 md:columns-3 2xl:columns-4 gap-3 mx-3 my-3">
                     {
-                        photos_data.photos.map((image: any, index: any) => (
+                        photos_data.photos.map((image, index) => (
                         <div key={image.id} className="mb-3 break-inside-avoid">
                             <Image
-                                alt={`Photo ${index + 1} by ${image.author}`}
+                                alt={`Photo ${index + 1} by Mutlu Kasap`}
                                 src={image.urls.full}
                                 width={3905}
                                 height={5849}

@@ -26,7 +26,7 @@ const gloria = localFont({
 const WhoAmI = () => (
   <section className="space-y-5">
     <p>
-      <em>Hey there!</em> 👋. I'm Mutlu, a Frontend Developer based in
+      <em>Hey there!</em> 👋. I&apos;m Mutlu, a Frontend Developer based in
       Istanbul, that loves to code and build products with a delightful user
       experience.
     </p>
@@ -60,7 +60,7 @@ const WhoAmI = () => (
     </p>
 
     <p>
-        Outside of work, I'm obsessed with sports, doing open source and listening music.
+        Outside of work, I&apos;m obsessed with sports, doing open source and listening music.
     </p>
 
     <div
