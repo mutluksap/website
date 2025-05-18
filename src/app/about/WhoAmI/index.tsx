@@ -1,5 +1,4 @@
 import Polaroid from './Polaroid'
-import cousin from './images/cousin.jpg'
 import apollon from './images/apollon.jpg'
 import party from './images/party.jpg'
 import thomas from './images/thomas.jpg'
