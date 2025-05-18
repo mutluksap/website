@@ -30,7 +30,7 @@ const Repositories = (props: Props) => {
             />
             <ul>
                 {repositories.length ? (
-                    repositories.map((repository) => (
+                    repositories.map((repository) => repository.name !== 'mutluksap' && !repository.fork && (
                         <li key={repository.name}>
                             <a
                                 href={repository.url}
