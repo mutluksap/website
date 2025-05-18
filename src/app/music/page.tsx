@@ -32,7 +32,7 @@ const Music = async () => {
                 lg:hover:scale-105
                 hover:scale-100
                 hover:shadow-xl
-                hover:z-10
+                hover:z-2
                 backdrop-blur-sm
                 bg-opacity-90
                 dark:bg-black/75
