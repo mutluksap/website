@@ -45,8 +45,6 @@ class Spotify implements SpotifyClass {
         });
 
         const text = await response.text();
-        console.log("Status:", response.status);
-        console.log("Response body:", text);
 
         try {
             const data = JSON.parse(text);
