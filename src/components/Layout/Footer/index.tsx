@@ -3,16 +3,14 @@ import spotify from "@/utils/api/spotify";
 
 import Wrapper from "@/components/Wrapper";
 import NowPlaying from "@/components/Layout/Footer/NowPlaying";
+import {SpotifyNowListeningResponse} from "@/types/spotify";
 
 const Footer = async () => {
-  const song = await spotify.getNowPlaying()
+  const song: SpotifyNowListeningResponse | null  = await spotify.getNowPlaying();
+
   return  <footer className="mt-8">
     <Wrapper>
-      {song &&
-          <div className="flex gap-4 flex-row items-center px-1 pt-4 text-sm text-neutral-500">
-            <NowPlaying song={song} />
-          </div>
-      }
+      <NowPlaying song={song?.item} />
       <div className="flex gap-4 items-center justify-between px-1 pb-4 text-sm text-neutral-500 mt-1">
       <span>Mutlu Kasap © {new Date().getFullYear()}</span>
         <div className="flex items-center">

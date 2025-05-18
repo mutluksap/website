@@ -17,7 +17,6 @@ export const metadata: Metadata = {
 
 const Projects = async () =>  {
     const data = await getData()
-    console.log(data)
     return     <main>
         <Wrapper>
             <PageTitle title="Projects" />
