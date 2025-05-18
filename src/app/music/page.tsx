@@ -3,6 +3,17 @@ import {FormattedTrackInfo, SPOTIFY_RECENT_TRACKS_TYPES} from "@/types/spotify";
 import Image from "next/image";
 import Link from "next/link";
 import PageTitle from "@/components/PageTitle";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: 'Music',
+    alternates: {
+        canonical: '/music',
+    },
+    openGraph: {
+        url: '/music',
+    },
+};
 
 const Music = async () => {
     //const songs: any = await spotify.getInitialTokensFromCode("AQDMko0p8LyDqL6T1E2zp0SKdfTYU9gjPxZivl1T0K5b_Eo1eBHblPwLZrSZ06TpyAft284dI7zQUifTRUY0kqGwdD0uxm0nI6AkYw2QL_oKkRY7p5hbVXQgJG22C5s5GmJWKiG9bW5gafYz780oHjhMM0t-odGg8jO_7aUK1IBZ_80FoOdWm07WFYTN1zi3kOib-zwBlcf9-dQi4oTjDZVlgCwsHBgRVQ3rUxWM2ZuScSKl61wpODTKEaQMxQ", "http://localhost:3000/api/callback")

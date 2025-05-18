@@ -8,7 +8,7 @@ const Link = (props: { href: string; label: string }) => {
     const linkClassName = 'underline-offset-2 underline'
 
     if (props.href.startsWith('/')) {
-        ;<NextLink href={props.href} className={linkClassName}>
+        <NextLink href={props.href} className={linkClassName}>
             {props.label}
         </NextLink>
     }
