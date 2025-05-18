@@ -10,8 +10,7 @@ type Props = {
 const Projects = (props: Props) => (
   <section>
     <Wrapper>
-      <SectionTitle title="Projects" />
-
+      <SectionTitle title="Projects" href={'/projects'} />
       <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3">
         {props.repos.map((repository) => (
           <Project repo={repository} key={repository.name} />

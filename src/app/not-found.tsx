@@ -7,7 +7,8 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/music", label: "Music" },
-  { href: "/photos", label: "Photos" }
+  { href: "/photos", label: "Photos" },
+  { href: "/projects", label: "Projects" }
 ];
 
 const Error404 = () => (

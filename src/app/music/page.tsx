@@ -6,7 +6,7 @@ import PageTitle from "@/components/PageTitle";
 
 const Music = async () => {
     //const songs: any = await spotify.getInitialTokensFromCode("AQDMko0p8LyDqL6T1E2zp0SKdfTYU9gjPxZivl1T0K5b_Eo1eBHblPwLZrSZ06TpyAft284dI7zQUifTRUY0kqGwdD0uxm0nI6AkYw2QL_oKkRY7p5hbVXQgJG22C5s5GmJWKiG9bW5gafYz780oHjhMM0t-odGg8jO_7aUK1IBZ_80FoOdWm07WFYTN1zi3kOib-zwBlcf9-dQi4oTjDZVlgCwsHBgRVQ3rUxWM2ZuScSKl61wpODTKEaQMxQ", "http://localhost:3000/api/callback")
-    const songs: any = await spotify.getLastListenedSongs(SPOTIFY_RECENT_TRACKS_TYPES.MULTIPLE_TRACKS)
+    const songs: never = await spotify.getLastListenedSongs(SPOTIFY_RECENT_TRACKS_TYPES.MULTIPLE_TRACKS)
     return    <div className="m-[0_auto] max-w-4xl px-6 sm:px-4">
         <main>
             <PageTitle title="Music" />
@@ -42,7 +42,7 @@ const Music = async () => {
               `}
                         >
                             {song.count > 1 && (
-                                <div className="group-hover:visible animate-bounce invisible transition-all absolute -right-1 -top-2 bg-gray-700 text-gray-300 text-sm px-2 py-1 rounded-full">
+                                <div className="group-hover:visible animate-bounce invisible transition-all absolute -right-1 -top-2 bg-black text-gray-300 text-sm px-2 py-1 rounded-full">
                                     <span className="text-xs">x</span>
                                     <span>{song.count}</span>
                                 </div>

@@ -14,6 +14,11 @@ class Github {
         const url = "https://api.github.com/users/mutluksap/repos";
         return this.getData(url);
     }
+
+    getUserInfo() {
+        const url = "https://api.github.com/users/mutluksap";
+        return this.getData(url);
+    }
 }
 
 const github = new Github();
