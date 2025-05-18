@@ -47,7 +47,7 @@ const Music = async () => {
                                     <span>{song.count}</span>
                                 </div>
                             )}
-                            <div className="relative h-52 bg-gradient-to-br flex items-center justify-center group-hover:animate-cdAnim">
+                            <div className="relative h-52 bg-gradient-to-br flex items-center justify-center group-hover:animate-spin">
                                 <Image
                                     src={song.img}
                                     alt={`${song.song} artwork`}
