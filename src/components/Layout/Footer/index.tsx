@@ -1,26 +1,20 @@
-import Wrapper from "@/components/Wrapper";
 import {socials} from "@/utils/constants";
 import spotify from "@/utils/api/spotify";
-import Image from "next/image";
+
+import Wrapper from "@/components/Wrapper";
+import NowPlaying from "@/components/Layout/Footer/NowPlaying";
 
 const Footer = async () => {
   const song = await spotify.getNowPlaying()
-  console.log(song)
   return  <footer className="mt-8">
     <Wrapper>
-      <div className="flex flex-col gap-4 items-start sm:flex-row sm:items-center sm:justify-between px-1 py-4 text-sm text-neutral-500">
+      {song &&
+          <div className="flex gap-4 flex-row items-center px-1 pt-4 text-sm text-neutral-500">
+            <NowPlaying song={song} />
+          </div>
+      }
+      <div className="flex gap-4 items-center justify-between px-1 pb-4 text-sm text-neutral-500 mt-1">
       <span>Mutlu Kasap © {new Date().getFullYear()}</span>
-        {
-          song && (
-                <div className="flex">
-                  Playing Now:
-                  <a target={'_blank'} href={song.item.external_urls.spotify} className="underline underline-offset-2 flex gap-2 ml-2">
-                    <Image className="rounded-full animate-spin border border-neutral-500" width={20} height={20} src={song.item.album.images[2].url} alt={'s'} />
-                    {song.item.album.artists.map(artist => artist.name).join(', ')} - {song.item.name}
-                  </a>
-                </div>
-          )
-        }
         <div className="flex items-center">
           <a
               href={socials.twitter}

@@ -34,7 +34,8 @@ const WhoAmI = () => (
     </p>
 
     <p>
-      Currently working at{' '}
+        Currently working at Next4biz
+        Currently working at{' '}
       <a
         href="https://next4biz.com"
         className="underline underline-offset-2"
@@ -43,7 +44,7 @@ const WhoAmI = () => (
       >
         Next4biz
       </a>{' '}
-      as a Frontend developer, building the digital bank the world loves to use.
+      as a Frontend developer, building the CRM and CSM product used by many leading companies in Turkey.
       Before that I worked at a startup called Petzzshop, an ecommerce.
     </p>
 
@@ -57,7 +58,7 @@ const WhoAmI = () => (
     <p>
         I was born and raised in Balıkesir
         then i moved Istanbul and come from a background
-        of studying Electrical Electronic Engineer.
+        of studying Frontend Engineer.
     </p>
 
     <p>
