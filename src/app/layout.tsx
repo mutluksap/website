@@ -6,7 +6,7 @@ import cn from "@/utils/cn";
 import Providers from "./providers";
 import Layout from "@/components/Layout";
 import "../utils/theme/theme.css";
-import {Analytics} from "@vercel/analytics/vue";
+import {Analytics} from "@vercel/analytics/next";
 
 const font = localFont({
   src: [
