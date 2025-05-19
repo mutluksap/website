@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { JSX } from "react";
+import { GoogleAnalytics } from '@next/third-parties/google'
 import localFont from "next/font/local";
 
 import cn from "@/utils/cn";
@@ -63,6 +64,7 @@ export default function RootLayout({
       <link rel="manifest" href="/manifest.json" />
     </head>
     <Analytics />
+    <GoogleAnalytics gaId="G-1BQNH9BVB9" />
       <body
         className={cn(
           "bg-white text-neutral-800 dark:bg-[rgb(5,5,5)] dark:text-neutral-200",
