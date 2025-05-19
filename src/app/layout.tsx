@@ -6,6 +6,7 @@ import cn from "@/utils/cn";
 import Providers from "./providers";
 import Layout from "@/components/Layout";
 import "../utils/theme/theme.css";
+import {Analytics} from "@vercel/analytics/vue";
 
 const font = localFont({
   src: [
@@ -61,6 +62,7 @@ export default function RootLayout({
       <link rel="apple-touch-icon" href="/favicon/apple-icon.png" />
       <link rel="manifest" href="/manifest.json" />
     </head>
+    <Analytics />
       <body
         className={cn(
           "bg-white text-neutral-800 dark:bg-[rgb(5,5,5)] dark:text-neutral-200",
