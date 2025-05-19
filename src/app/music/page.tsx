@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 const Music = async () => {
     //const songs: any = await spotify.getInitialTokensFromCode("AQDMko0p8LyDqL6T1E2zp0SKdfTYU9gjPxZivl1T0K5b_Eo1eBHblPwLZrSZ06TpyAft284dI7zQUifTRUY0kqGwdD0uxm0nI6AkYw2QL_oKkRY7p5hbVXQgJG22C5s5GmJWKiG9bW5gafYz780oHjhMM0t-odGg8jO_7aUK1IBZ_80FoOdWm07WFYTN1zi3kOib-zwBlcf9-dQi4oTjDZVlgCwsHBgRVQ3rUxWM2ZuScSKl61wpODTKEaQMxQ", "http://localhost:3000/api/callback")
-    const songs: FormattedTrackInfo[] = await spotify.getLastListenedSongs(SPOTIFY_RECENT_TRACKS_TYPES.MULTIPLE_TRACKS)
+    //const songs: FormattedTrackInfo[] = await spotify.getLastListenedSongs(SPOTIFY_RECENT_TRACKS_TYPES.MULTIPLE_TRACKS)
     return    <div className="m-[0_auto] max-w-4xl px-6 sm:px-4">
         <main>
             <PageTitle title="Music" />
@@ -27,6 +27,7 @@ const Music = async () => {
                 </p>
             </section>
             <div className="relative flex flex-wrap gap-3 w-full rounded-xl md: justify-space-between justify-center py-5">
+                {/*
                 {spotify.flattenArray(songs).map((song) => {
                     return (
                         <Link
@@ -96,6 +97,7 @@ const Music = async () => {
                         </Link>
                     );
                 })}
+                */}
             </div>
         </main>
     </div>;
