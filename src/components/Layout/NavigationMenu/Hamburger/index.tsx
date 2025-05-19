@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { usePathname } from 'next/navigation'
+
 import { RemoveScroll } from 'react-remove-scroll'
 
 import Links from '../Links'
