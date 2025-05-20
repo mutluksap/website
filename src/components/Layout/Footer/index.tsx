@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import {socials} from "@/utils/constants";
 import spotify from "@/utils/api/spotify";
 
