@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import Image from "next/image";
 import { Track } from "@/types/spotify";
 import React from "react";
