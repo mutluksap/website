@@ -1,11 +1,11 @@
-export const dynamic = 'force-dynamic';
-
 import {socials} from "@/utils/constants";
 import spotify from "@/utils/api/spotify";
 
 import Wrapper from "@/components/Wrapper";
 import NowPlaying from "@/components/Layout/Footer/NowPlaying";
 import {SpotifyNowListeningResponse} from "@/types/spotify";
+
+export const revalidate: number = 30;
 
 const Footer = async () => {
   const song: SpotifyNowListeningResponse | null  = await spotify.getNowPlaying();
