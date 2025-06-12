@@ -86,6 +86,10 @@
     background-color: #ff7043;
   }
 
+  .language-project-vue {
+    background-color: #42b883;
+  }
+
   .prose a[href]:not([href^="#"]) {
     @apply no-underline text-blue-600 underline-offset-2 dark:text-blue-400;
   }

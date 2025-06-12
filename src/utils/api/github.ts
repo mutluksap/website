@@ -5,13 +5,18 @@ class Github {
                 method: "GET",
             });
             return await res.json();
-        } catch (e) {
-            return null;
+        } catch (error) {
+            return error;
         }
     }
 
     getRepos() {
         const url = "https://api.github.com/users/mutluksap/repos";
+        return this.getData(url);
+    }
+
+    getUserInfo() {
+        const url = "https://api.github.com/users/mutluksap";
         return this.getData(url);
     }
 }

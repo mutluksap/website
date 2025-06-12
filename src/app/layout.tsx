@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { JSX } from "react";
+import { GoogleAnalytics } from '@next/third-parties/google'
 import localFont from "next/font/local";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
@@ -7,6 +8,7 @@ import cn from "@/utils/cn";
 import Providers from "./providers";
 import Layout from "@/components/Layout";
 import "../utils/theme/theme.css";
+import {Analytics} from "@vercel/analytics/next";
 
 const font = localFont({
   src: [
@@ -62,6 +64,8 @@ export default function RootLayout({
       <link rel="apple-touch-icon" href="/favicon/apple-icon.png" />
       <link rel="manifest" href="/manifest.json" />
     </head>
+    <Analytics />
+    <GoogleAnalytics gaId="G-1BQNH9BVB9" />
       <body
         className={cn(
           "bg-white text-neutral-800 dark:bg-[rgb(5,5,5)] dark:text-neutral-200",

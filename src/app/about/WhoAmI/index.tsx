@@ -1,9 +1,7 @@
-import Link from 'next/link'
-
 import Polaroid from './Polaroid'
-import cousin from './images/cousin.jpg'
 import apollon from './images/apollon.jpg'
 import party from './images/party.jpg'
+import thomas from './images/thomas.jpg'
 import cn from "@/utils/cn";
 import localFont from "next/font/local";
 
@@ -28,13 +26,14 @@ const gloria = localFont({
 const WhoAmI = () => (
   <section className="space-y-5">
     <p>
-      <em>Hey there!</em> 👋. I'm Mutlu, a Frontend Developer based in
+      <em>Hey there!</em> 👋. I&apos;m Mutlu, a Frontend Developer based in
       Istanbul, that loves to code and build products with a delightful user
       experience.
     </p>
 
     <p>
-      Currently working at{' '}
+        Currently working at Next4biz
+        Currently working at{' '}
       <a
         href="https://next4biz.com"
         className="underline underline-offset-2"
@@ -43,7 +42,7 @@ const WhoAmI = () => (
       >
         Next4biz
       </a>{' '}
-      as a Frontend developer, building the digital bank the world loves to use.
+      as a Frontend developer, building the CRM and CSM product used by many leading companies in Turkey.
       Before that I worked at a startup called Petzzshop, an ecommerce.
     </p>
 
@@ -57,20 +56,20 @@ const WhoAmI = () => (
     <p>
         I was born and raised in Balıkesir
         then i moved Istanbul and come from a background
-        of studying Electrical Electronic Engineer.
+        of studying Frontend Engineer.
     </p>
 
     <p>
-        Outside of work, I'm obsessed with sports, doing open source and listening music.
+        Outside of work, I&apos;m obsessed with sports, doing open source and listening music.
     </p>
 
     <div
       className={cn('py-4 flex gap-0 lg:gap-6 lg:flex-wrap', gloria.className)}
     >
-      <Polaroid label="Cousin & I ❣️" src={cousin} rotation="-3" />
+      <Polaroid label="Party 🪩" src={party} rotation="-2" />
       <Polaroid label="Apollon '23 🏖️" src={apollon} rotation="1" />
       <div className="hidden sm:block">
-        <Polaroid label="Party 🪩" src={party} rotation="-2" />
+        <Polaroid label="Thomas ❣️" src={thomas} rotation="-3" />
       </div>
     </div>
   </section>

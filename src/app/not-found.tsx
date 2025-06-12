@@ -6,9 +6,9 @@ import Wrapper from "@/components/Wrapper";
 const links = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/blog", label: "Blog" },
-  { href: "/projects", label: "Projects" },
-  { href: "/uses", label: "Uses" },
+  { href: "/music", label: "Music" },
+  { href: "/photos", label: "Photos" },
+  { href: "/projects", label: "Projects" }
 ];
 
 const Error404 = () => (
