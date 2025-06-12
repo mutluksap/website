@@ -17,7 +17,7 @@ const Photos = async () => {
     return (
         <section>
             {
-                photos_data.photos.length > 0 &&
+                photos_data?.photos?.length > 0 &&
                 <div className="columns-1 sm:columns-2 md:columns-3 2xl:columns-4 gap-3 mx-3 my-3">
                     {
                         photos_data.photos.map((image: any, index: any) => (
@@ -37,7 +37,7 @@ const Photos = async () => {
                 </div>
             }
             {
-                photos_data.photos.length === 0 &&
+                photos_data?.photos?.length === 0 &&
                 <div className="pt-10">
                     <p className="text-gray-00 text-center">I will upload photos as soon as.</p>
                 </div>
