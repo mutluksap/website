@@ -1,7 +1,7 @@
 import Polaroid from './Polaroid'
 import apollon from './images/apollon.jpg'
 import party from './images/party.jpg'
-import thomas from './images/thomas.jpg'
+import surf from './images/surf.jpg'
 import cn from "@/utils/cn";
 import localFont from "next/font/local";
 
@@ -66,10 +66,10 @@ const WhoAmI = () => (
     <div
       className={cn('py-4 flex gap-0 lg:gap-6 lg:flex-wrap', gloria.className)}
     >
-      <Polaroid label="Party 🪩" src={party} rotation="-2" />
+        <Polaroid label="Surf 🏄🏻‍♂️️" src={surf} rotation="-2" />
       <Polaroid label="Apollon '23 🏖️" src={apollon} rotation="1" />
       <div className="hidden sm:block">
-        <Polaroid label="Thomas ❣️" src={thomas} rotation="-3" />
+          <Polaroid label="Party 🪩" src={party} rotation="-3" />
       </div>
     </div>
   </section>
