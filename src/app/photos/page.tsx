@@ -18,10 +18,10 @@ const Photos = async () => {
     return (
         <section>
             {
-                photos_data?.photos?.length > 0 &&
+                photos_data?.length > 0 &&
                 <div className="columns-1 sm:columns-2 md:columns-3 2xl:columns-4 gap-3 mx-3 my-3">
                     {
-                        photos_data.photos.map((image, index) => (
+                        photos_data.map((image, index) => (
                         <div key={image.id} className="mb-3 break-inside-avoid">
                             <Image
                                 alt={`Photo ${index + 1} by Mutlu Kasap`}
