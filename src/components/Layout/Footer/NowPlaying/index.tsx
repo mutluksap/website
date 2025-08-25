@@ -12,7 +12,7 @@ const NowPlaying: React.FC<NowPlayingProps> = ({ song }) => {
     const artists = album.artists.map((artist) => artist.name).join(", ");
 
     return (
-        <div className="flex gap-4 items-center px-1 pt-4 text-sm text-neutral-500">
+        <div className="flex gap-1 items-center px-1 pt-4 text-sm text-neutral-500">
             <span className="font-bold">Playing Now:</span>
             <a
                 target="_blank"
