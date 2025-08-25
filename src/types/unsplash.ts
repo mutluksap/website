@@ -21,7 +21,9 @@ export interface PhotosResponse {
     blur_hash: string;
     description: string | null;
     alt_description: string | null;
-    breadcrumbs: any[];
+
+    breadcrumbs: unknown[];
+
     urls: {
         raw: string;
         full: string;
@@ -30,17 +32,22 @@ export interface PhotosResponse {
         thumb: string;
         small_s3: string;
     };
+
     links: {
         self: string;
         html: string;
         download: string;
         download_location: string;
     };
+
     likes: number;
     liked_by_user: boolean;
-    current_user_collections: any[];
-    sponsorship: null | object;
-    topic_submissions: Record<string, any>;
+    current_user_collections: unknown[];
+
+    sponsorship: null | Record<string, unknown>;
+
+    topic_submissions: Record<string, unknown>;
+
     asset_type: string;
     user: User;
     pinned: null | string;
@@ -57,6 +64,7 @@ export interface User {
     portfolio_url: string | null;
     bio: string | null;
     location: string | null;
+
     links: {
         self: string;
         html: string;
@@ -66,11 +74,13 @@ export interface User {
         following: string;
         followers: string;
     };
+
     profile_image: {
         small: string;
         medium: string;
         large: string;
     };
+
     instagram_username: string | null;
     total_collections: number;
     total_likes: number;
@@ -80,6 +90,7 @@ export interface User {
     total_promoted_illustrations: number;
     accepted_tos: boolean;
     for_hire: boolean;
+
     social: {
         instagram_username: string | null;
         portfolio_url: string | null;
