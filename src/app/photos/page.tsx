@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 const Photos = async () => {
-    const photos_data: PhotosResponse = await unsplash.getImages();
+    const photos_data: PhotosResponse[] = await unsplash.getImages();
     return (
         <section>
             {
@@ -38,7 +38,7 @@ const Photos = async () => {
                 </div>
             }
             {
-                photos_data?.photos?.length === 0 &&
+                photos_data?.length === 0 &&
                 <div className="pt-10">
                     <p className="text-gray-400 text-center">I will upload photos as soon as.</p>
                 </div>
