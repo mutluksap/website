@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import spotify from "@/utils/api/spotify";
 import {FormattedTrackInfo, SPOTIFY_RECENT_TRACKS_TYPES} from "@/types/spotify";
 import Image from "next/image";

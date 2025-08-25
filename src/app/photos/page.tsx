@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { Metadata } from "next";
 import unsplash from "@/utils/api/unsplash";
 import Image from "next/image";
