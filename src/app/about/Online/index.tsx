@@ -23,7 +23,6 @@ const profiles = [
 const Online = () => (
   <section>
     <SectionTitle title="Online" />
-
     <ul className="grid grid-cols-2 gap-3 sm:grid-flow-col sm:grid-cols-[repeat(4,min-content)]">
       {profiles.map((profile) => (
         <li key={profile.name}>
