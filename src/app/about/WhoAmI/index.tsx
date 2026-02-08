@@ -32,18 +32,18 @@ const WhoAmI = () => (
     </p>
 
     <p>
-        Currently working at Next4biz
         Currently working at{' '}
       <a
-        href="https://next4biz.com"
+        href="https://www.ttboom.com/"
         className="underline underline-offset-2"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Next4biz
+          ticktockboom
       </a>{' '}
-      as a Frontend developer, building the CRM and CSM product used by many leading companies in Turkey.
-      Before that I worked at a startup called Petzzshop, an ecommerce.
+      as a Frontend developer, building the social media monitoring product used by many leading companies in Turkey.
+        Before that, I worked at Next4biz, where I developed CRM and CSM products.
+        My first professional experience was at Petzzshop, an e-commerce startup.
     </p>
 
     <p>

@@ -13,13 +13,27 @@ export type Job = {
 const work: Job[] = [
   {
     company: {
+      link: 'https://www.ttboom.com/',
+      logo: '/images/companies/ttboom.webp',
+      name: 'Tick Tock Boom',
+    },
+    positions: [
+      {
+        dateFinish: null,
+        dateStart: '01/02/2026',
+        title: 'Frontend Developer',
+      },
+    ],
+  },
+  {
+    company: {
       link: 'https://next4biz.com',
       logo: '/images/companies/next4biz.webp',
       name: 'Next4biz',
     },
     positions: [
       {
-        dateFinish: null,
+        dateFinish: '01/01/2026',
         dateStart: '05/09/2022',
         title: 'Frontend Developer',
       },
